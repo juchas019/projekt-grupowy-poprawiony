@@ -11,19 +11,21 @@ body {
     z-index: 1;
     position: relative;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    /*margin-top: 50px;*/
+    padding-top: 50px;
 }
 
-.heading:after {
-    left: 50%;
-    height: 3px;
-    width: 50px;
-    content: " ";
-    bottom: -35px;
-    margin-left: -25px;
-    position: absolute;
-    background: #444;
-}
+/*.heading:after {*/
+    /*left: 50%;*/
+    /*height: 3px;*/
+    /*width: 50px;*/
+    /*content: " ";*/
+    /*bottom: -35px;*/
+    /*margin-left: -25px;*/
+    /*position: absolute;*/
+    /*background: #444;*/
+/*}*/
 
 .heading h2 {
     font-size: 40px;
@@ -32,19 +34,31 @@ body {
     color: #444;
 }
 /* NAVIGATION MENU */
-
-
+.navbar {
+    display: flex;
+}
+.navbar-item-list {
+    justify-content: end;
+    text-align: right;
+}
 .nav-link {
     text-transform: uppercase;
+    margin-left: 40px;
 }
-.navbar a:hover,
-.navbar a.active {
+.navbar .nav-link:hover
+{
     border-bottom: 3px solid #C6596F;
+    transform: scale(1.05);
 }
 
 .navbar-brand {
     float: left;
+    margin-left: 100px;
 }
+.nav-item {
+    height: 30px;
+}
+
 
 .topnav-right {
     float: right;
@@ -114,7 +128,7 @@ body {
     display: block;
     transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
@@ -124,7 +138,7 @@ body {
     bottom: -3px;
     left: calc(0.7em * 1.2);
     right: calc(0.7em * 1.2);
-    height: 5px;
+    height: 3px;
     background: #C6596F;
     transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
     transform-origin: left;
@@ -134,13 +148,13 @@ body {
     background: #C6596F;
 }
 .intro-btn .line.-right, .intro-btn .line.-left {
-    width: 5px;
+    width: 3px;
     bottom: -3px;
     top: -3px;
     transform: scale3d(1, 0, 1);
 }
 .intro-btn .line.-top, .intro-btn .line.-bottom {
-    height: 5px;
+    height: 3px;
     left: -3px;
     right: -3px;
     transform: scale3d(0, 1, 1);
@@ -205,8 +219,8 @@ body {
 
 /* 4 Boxes Icons*/
 .boxes {
-    margin-top: 2em;
-    margin-bottom: 2rem;
+    /*margin-top: 2rem;*/
+    margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -224,7 +238,8 @@ body {
     padding-top: 2rem;
 }
 .box img {
-    width: 50%
+    width: 50%;
+    padding-top: 20px;
 }
 .box:hover {
     background: #F1F1F1;
@@ -234,10 +249,10 @@ body {
     box-shadow: 8px 8px 16px rgba(0,0,0,0.1);
 }
 
-.under_line {
-    width: 57px;
-    border-top: 3px solid #C6596F;
-    margin: 10px auto 0px auto;
+/*.under_line {*/
+    /*width: 57px;*/
+    /*border-top: 3px solid #C6596F;*/
+    /*margin: 10px auto 0px auto;*/
 }
 
 /* 8 funkcjonalnocsi - wersja 1*/
@@ -290,16 +305,16 @@ padding-top: 1rem;
 /*.item-wrap, .you-get-icon, .sub-title, .item {*/
     /*border: 1px solid red;*/
 /*}*/
-.you-get {
+.details {
     background: #f2f4f8;
 }
 
-.item-wrap .you-get-icon, .you-get .item-wrap .sub-title {
+.item-wrap .you-get-icon, .details .item-wrap .sub-title {
     transition: 400ms;
     opacity: 1;
     float: left;
 }
-.you-get .item-wrap .you-get-icon {
+.details .item-wrap .you-get-icon {
     font-size: 3rem;
     margin-right: 20px;
 }
@@ -309,12 +324,13 @@ padding-top: 1rem;
     top: 5%;
     width: 90%;
     height: 90%;
-    padding: 10px;
+    padding: 15px;
     opacity: 0;
     transition: 400ms;
     background-color: white;
+    /*text-align: center;*/
 }
-.you-get .item-wrap .item {
+.details .item-wrap .item {
     display: flex;
     align-items: center;
 }
@@ -325,7 +341,7 @@ padding-top: 1rem;
     justify-content: center;
 }
 
-.you-get .lalala-before:before {
+.details .lalala-before:before {
     content: '';
     position: absolute;
     right: 0;
@@ -334,7 +350,7 @@ padding-top: 1rem;
     top: 5%;
     background: radial-gradient(ellipse at center, #b8b8b8 0%, rgba(255,255,255,0) 100%);
 }
-.you-get .item-wrap:after {
+.details .item-wrap:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -375,7 +391,7 @@ padding-top: 1rem;
 .newsletter .form {
     border-radius: 20px;
     padding: 3rem;
-    width: 49%;
+    width: 60%;
     margin: 0 auto;
     background: RGBA(255, 255, 255, 0.8);
 }

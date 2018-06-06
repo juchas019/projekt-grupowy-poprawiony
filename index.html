@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>C-bula</title>
+    <link rel="shortcut icon" href="img/cbula-favicon-01.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -12,21 +13,20 @@
 <body>
 <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
     <!-- Brand/logo -->
+    <div class="navbar-logo">
     <a class="navbar-brand" href="#">
         <img src="img/logo.png" alt="logo" style="height: 50px">
     </a>
+    </div>
 
     <!-- Links -->
-
-    <ul class="navbar-nav topnav-right">
+<div class="navbar-item-list">
+    <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link active" href="#intro">Home</a>
+            <a class="nav-link" href="#boxes">Zalety</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#boxes">Na skróty</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#funct">Zalety</a>
+            <a class="nav-link" href="#details">Szczegóły</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#newsletter">Premiera</a>
@@ -35,22 +35,23 @@
             <a class="nav-link" href="#about-us">O nas</a>
         </li>
     </ul>
+</div>
 </nav>
 
 <section class="intro">
     <div id="intro-slider" class="carousel slide intro-slide" data-ride="carousel">
         <div class="container">
             <div class="row">
-                <div class="intro-header col">
+                <div class="intro-header">
 
-                    <h1>Blisko. Szybko. Świeżo.</h1>
+                    <h1>Blisko Szybko Świeżo</h1>
 
                     <p>Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych niewychodząc z domu.
-                        <br/> Ty - wybierasz, My - zajmujemy się resztą.</p>
+                        <br/> Ty  wybierasz, My zajmujemy się resztą.</p>
 
                     <div class="intro-btn">
                         <a>
-                            <span class="text">sprawdź</span>
+                            <span class="text">Sprawdź</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>
@@ -89,148 +90,39 @@
 
 <!--4 Lukasz boxes icons-->
 <section class="boxes" id="boxes">
+    <div class="heading">
+    <h2>Zalety aplikacji</h2>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 box">
                 <img src="img/grocery%20.png" alt="">
                 <h2>Łatwe zakupy</h2>
-                <div class="under_line"></div>
             </div>
-            <div class="col col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box">
                 <img src="img/delivery.png" alt="">
                 <h2>Dostawa do domu</h2>
-                <div class="under_line"></div>
-
             </div>
-            <div class="col col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box">
                 <img src="img/choices.png" alt="">
                 <h2>Regionalne produkty</h2>
-                <div class="under_line"></div>
-
             </div>
-            <div class="col col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box">
                 <img src="img/online-shop.png" alt="">
                 <h2>Oszczędność czasu</h2>
-                <div class="under_line"></div>
-
             </div>
         </div>
     </div>
 </section>
-
-
-<!--**********************************-->
-<section id="benefits" class="benefits">
+<section class="details" id="details">
     <div class="container">
         <div class="heading">
-            <h2>Powody dla których <b>warto korzystać</b> z aplikacji</h2>
-        </div>
-        <div class="row items-wrp">
-            <div class="benefits-field col-12 col-sm-5">
-
-                <div class="field field-1 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="img/grocery%20(1).png" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>Łatwe zakupy</b>
-                        <p class="description">Kupowanie online jest bardzo proste a zakupy zrobisz bardziej
-                            przemyslane i racjonalne z dowolnego miejsca.
-                            Aplikacja pozwala na zamówienie różnorodnych produktów z wielu sklepów
-                            osiedlowych.</p>
-                    </div>
-                </div>
-
-                <div class="field field-2 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="img/checklist.png" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>Regionalne produkty</b>
-                        <p class="description">W ofertach małych sklepików znaleźć można żywność ekologiczną,
-                            pochodzącą od lokalnych rolników i gospodarstw. Są wśród nich m.in.
-                            wędliny, owoce, warzywa, wyroby piekarnicze, miody, sery i olej.
-                            Dzięki temu możesz odnaleźć produkty wyjątkowe pod względem jakości i smaku.</p>
-                    </div>
-                </div>
-                <div class="field field-3 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="img/fruit.png" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>Świeże produkty</b>
-                        <p class="description">Nie bez znaczenia jest jakość towaru.
-                            Każdy docenia świeżość pieczywa, owoców i warzyw oraz mięsa i nabiału oferowanego w
-                            lokalnych sklepach. Kupując je, masz pewność, że dostarczone produkty nie zepsują się,
-                            ponieważ zamawiasz z blisko położonych sklepów na osiedlu, a czas dostawy jest krótki.</p>
-                    </div>
-                </div>
-                <div class="field field-4 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="img/map-location.png" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>"Tu mieszkam, Tu kupuję"</b>
-                        <p class="description">Hasło ogólnopolskiego programu społecznego,
-                            które ma na celu promocję i wsparcie niezależnych, osiedlowych sklepików,
-                            o zasięgu lokalnym oraz rozwoju tradycyjnego handlu. Stanowią one serce
-                            każdej lokalnej społeczności, a zakupy w nich mają wiele zalet.
-                            Ich istnienie jest również ważne ze względu na tworzenie dodatkowych miejsc pracy
-                            i wspieranie rodzimego, polskiego handlu i produktów.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="benefits-field ben-f-2 col-md-2">
-                <img class="benefits-linia" src="img/linia2.png" alt="">
-            </div>
-            <div class="benefits-field col-12 col-sm-5">
-                <div class="field field-5 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="img/delivery2.png" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>Dostawa dodomu</b>
-                        <p class="description">Masz już dosyć dźwigania ciężkich kartonów i butelek na 4 piętro?
-                            Czemu nie miałby Ci przynieść ich pod drzwi kurier? Dostawę pod drzwi docenią przede
-                            wszystkim osoby z różnymi problemami zdrowotnymi, osoby opiekujące się dziećmi,
-                            bądź też pozbawione samochodu. Poza tym kto tak naprawdę lubi się męczyć?</p>
-                    </div>
-                </div>
-                <div class="field field-6 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="img/online-shop1.png" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>Oszczędność czasu</b>
-                        <p class="description">Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu i stania w długich kolejkach.
-                            Spędź ten czas z najbliższymi. Zamówienie zajmie Ci tylko chwilę, dzięki temu zaoszczędzisz dużo czasu.
-                            Zapłacisz kilkanaście złotych więcej za zakupy (koszt dostawy), ale w cenie wliczony będzie
-                            Twój komfort i czas.
-                            Zamówienie otrzymasz jeszcze tego samego dnia.</p>
-                    </div>
-                </div>
-                <div class="field field-7 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="img/smartphone.png" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>Łatwa obsługa aplikaji</b>
-                        <p class="description">Aplikacja działa na różnych urządzeniach, tj. telefon, tablet czy laptop.
-                            Wygodna oraz intuicyjna w obsłudze. W łatwy sposób odnajdziesz potrzebny Ci sklep i
-                            produkty.....
-
-                        </p>
-                    </div>
-                </div>
-                <div class="field field-8 row">
-                    <div class="benefits-box box-icon col-sm-2"><img src="" alt=""></div>
-                    <div class="benefits-box box-text col-sm-10">
-                        <b>Coś dopisać</b>
-                        <p class="description">Hasło ogólnopolskiego programu społecznego,
-                            które ma na celu promocję i wsparcie niezależnych, osiedlowych sklepików,
-                            o zasięgu lokalnym oraz rozwoju tradycyjnego handlu.  </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="you-get">
-    <div class="container">
-        <div class="heading">
-            <h2>Powody dla których <b>warto korzystać</b> z aplikacji</h2>
+            <h2>Powody dla których warto korzystać z aplikacji</h2>
         </div>
         <div class="row justify-content-center ">
-            <div class="col-sm-10">
+            <div class="col-sm-12">
                 <div class="row">
-                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                    <div class="details-func details-func-before col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/grocery%201.png"></span>
                             </div>
@@ -243,7 +135,7 @@
                             </div><!-- description -->
                         </div><!-- item -->
                     </div><!-- item-wrap -->
-                    <div class="lalala col-sm-6 item-wrap">
+                    <div class="details-func col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/checklist.png"></span>
                             </div>
@@ -257,7 +149,7 @@
                             </div><!-- description -->
                         </div><!-- item -->
                     </div><!-- item-wrap -->
-                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                    <div class="details-func details-func-before col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/fruit.png"></span>
                             </div>
@@ -270,7 +162,7 @@
                             </div><!-- description -->
                         </div><!-- item -->
                     </div><!-- item-wrap -->
-                    <div class="lalala col-sm-6 item-wrap">
+                    <div class="details-func col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/map-location.png"></span>
                             </div>
@@ -284,7 +176,7 @@
                             </div><!-- description -->
                         </div><!-- item -->
                     </div><!-- item-wrap -->
-                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                    <div class="details-func details-func-before col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/delivery2.png"></span>
                             </div>
@@ -297,7 +189,7 @@
                             </div><!-- description -->
                         </div><!-- item -->
                     </div><!-- item-wrap -->
-                    <div class="lalala col-sm-6 item-wrap">
+                    <div class="details-func col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/online-shop1.png"></span>
                             </div>
@@ -310,7 +202,7 @@
                             </div><!-- description -->
                         </div><!-- item -->
                     </div><!-- item-wrap -->
-                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                    <div class="details-func details-func-before col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/fruit.png"></span>
                             </div>
@@ -322,7 +214,7 @@
                             </div><!-- description -->
                         </div><!-- item -->
                     </div><!-- item-wrap -->
-                    <div class="lalala col-sm-6 item-wrap">
+                    <div class="details-func col-sm-6 item-wrap">
                         <div class="row item">
                             <div class="col-2"><span class="you-get-icon"><img src="img/smartphone.png"></span>
                             </div>
@@ -342,7 +234,6 @@
     </div><!-- container -->
 </section>
 <!--Paweł - Newsletter, podanie maila i imienia-->
-**
 <section class="newsletter" id="newsletter">
     <form class="form heading">
         <h2>Zapisz się na <b>premierę!</b></h2>
@@ -383,9 +274,9 @@
 
 <!--Lukasz - ABOUT US-->
 
-<div class="container content">
+<div class="container content" id="about-us">
     <div class="heading">
-        <h2>Super zespół <strong>C-Bula</strong></h2>
+        <h2>Zespół <strong>C-Bula</strong></h2>
         <!--<p>To try the most advanced business</p>-->
     </div><!-- //end heading -->
 
