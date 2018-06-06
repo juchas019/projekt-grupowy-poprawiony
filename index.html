@@ -7,47 +7,50 @@
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="main.css" rel="stylesheet" type="text/css">
-    <!--   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Tangerine" rel="stylesheet">  -->
-    <!--   <link rel="stylesheet" href="https://github.com/necolas/normalize.css/">   -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel=   "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
     <!-- Brand/logo -->
     <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="logo" style="height:50px;">
+        <img src="img/logo.png" alt="logo" style="height: 50px">
     </a>
 
     <!-- Links -->
-    <ul class="navbar-nav">
+
+    <ul class="navbar-nav topnav-right">
         <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link active" href="#intro">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="#boxes">Na skróty</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
+            <a class="nav-link" href="#funct">Zalety</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#newsletter">Premiera</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about-us">O nas</a>
         </li>
     </ul>
 </nav>
 
 <section class="intro">
-    <div id="carouselExampleIndicators" class="carousel slide intro-slide" data-ride="carousel">
+    <div id="intro-slider" class="carousel slide intro-slide" data-ride="carousel">
         <div class="container">
             <div class="row">
-                <div class="intro-header">
+                <div class="intro-header col">
 
                     <h1>Blisko. Szybko. Świeżo.</h1>
 
-                    <p>Bliskość, oszczędność czasu i świeże produkty. Rób zakupy w małych osiedlowych sklepikach niewychodząc z domu.
-                     <br /> Ty - wybierasz, My - zajmujemy się resztą.</p>
+                    <p>Dzięki aplikacji zrobisz zakupy w ulubionych sklepikach osiedlowych niewychodząc z domu.
+                        <br/> Ty - wybierasz, My - zajmujemy się resztą.</p>
 
                     <div class="intro-btn">
                         <a>
-                            <span class="text">Sprawdź</span>
+                            <span class="text">sprawdź</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>
@@ -58,26 +61,26 @@
             </div>
         </div>
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#intro-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#intro-slider" data-slide-to="1"></li>
+            <li data-target="#intro-slider" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="img/header1.jpg" alt="Slajd pierwszy">
+                <img class="d-block w-100" src="img/intro-header1.jpg" alt="Slajd pierwszy">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/header2.jpeg" alt="Slajd drugi">
+                <img class="d-block w-100" src="img/intro-header2.jpeg" alt="Slajd drugi">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/header3.jpg" alt="Slajd trzeci">
+                <img class="d-block w-100" src="img/intro-header3.jpeg" alt="Slajd trzeci">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#intro-slider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Poprzedni</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#intro-slider" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Następny</span>
         </a>
@@ -85,54 +88,274 @@
 </section>
 
 <!--4 Lukasz boxes icons-->
-<section class="boxes">
-    <div class="container-fluid">
+<section class="boxes" id="boxes">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-3 box">
+            <div class="col-12 col-md-6 col-lg-3 box">
                 <img src="img/grocery%20.png" alt="">
                 <h2>Łatwe zakupy</h2>
+                <div class="under_line"></div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 box">
+            <div class="col col-md-6 col-lg-3 box">
                 <img src="img/delivery.png" alt="">
                 <h2>Dostawa do domu</h2>
+                <div class="under_line"></div>
+
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 box">
+            <div class="col col-md-6 col-lg-3 box">
                 <img src="img/choices.png" alt="">
-                <h2>Duży wybór</h2>
+                <h2>Regionalne produkty</h2>
+                <div class="under_line"></div>
+
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 box">
+            <div class="col col-md-6 col-lg-3 box">
                 <img src="img/online-shop.png" alt="">
-                <h2>Bez wychodzenia z domu</h2>
+                <h2>Oszczędność czasu</h2>
+                <div class="under_line"></div>
+
             </div>
         </div>
     </div>
 </section>
 
-<section class="function">
-    8 funkcjonalności w dwóch kolumnach plus opis
-    <article>
-        4 po lewej
-    </article>
-    <article>
-        4 po prawej
-    </article>
+
+<!--**********************************-->
+<section id="benefits" class="benefits">
+    <div class="container">
+        <div class="heading">
+            <h2>Powody dla których <b>warto korzystać</b> z aplikacji</h2>
+        </div>
+        <div class="row items-wrp">
+            <div class="benefits-field col-12 col-sm-5">
+
+                <div class="field field-1 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="img/grocery%20(1).png" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>Łatwe zakupy</b>
+                        <p class="description">Kupowanie online jest bardzo proste a zakupy zrobisz bardziej
+                            przemyslane i racjonalne z dowolnego miejsca.
+                            Aplikacja pozwala na zamówienie różnorodnych produktów z wielu sklepów
+                            osiedlowych.</p>
+                    </div>
+                </div>
+
+                <div class="field field-2 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="img/checklist.png" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>Regionalne produkty</b>
+                        <p class="description">W ofertach małych sklepików znaleźć można żywność ekologiczną,
+                            pochodzącą od lokalnych rolników i gospodarstw. Są wśród nich m.in.
+                            wędliny, owoce, warzywa, wyroby piekarnicze, miody, sery i olej.
+                            Dzięki temu możesz odnaleźć produkty wyjątkowe pod względem jakości i smaku.</p>
+                    </div>
+                </div>
+                <div class="field field-3 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="img/fruit.png" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>Świeże produkty</b>
+                        <p class="description">Nie bez znaczenia jest jakość towaru.
+                            Każdy docenia świeżość pieczywa, owoców i warzyw oraz mięsa i nabiału oferowanego w
+                            lokalnych sklepach. Kupując je, masz pewność, że dostarczone produkty nie zepsują się,
+                            ponieważ zamawiasz z blisko położonych sklepów na osiedlu, a czas dostawy jest krótki.</p>
+                    </div>
+                </div>
+                <div class="field field-4 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="img/map-location.png" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>"Tu mieszkam, Tu kupuję"</b>
+                        <p class="description">Hasło ogólnopolskiego programu społecznego,
+                            które ma na celu promocję i wsparcie niezależnych, osiedlowych sklepików,
+                            o zasięgu lokalnym oraz rozwoju tradycyjnego handlu. Stanowią one serce
+                            każdej lokalnej społeczności, a zakupy w nich mają wiele zalet.
+                            Ich istnienie jest również ważne ze względu na tworzenie dodatkowych miejsc pracy
+                            i wspieranie rodzimego, polskiego handlu i produktów.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits-field ben-f-2 col-md-2">
+                <img class="benefits-linia" src="img/linia2.png" alt="">
+            </div>
+            <div class="benefits-field col-12 col-sm-5">
+                <div class="field field-5 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="img/delivery2.png" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>Dostawa dodomu</b>
+                        <p class="description">Masz już dosyć dźwigania ciężkich kartonów i butelek na 4 piętro?
+                            Czemu nie miałby Ci przynieść ich pod drzwi kurier? Dostawę pod drzwi docenią przede
+                            wszystkim osoby z różnymi problemami zdrowotnymi, osoby opiekujące się dziećmi,
+                            bądź też pozbawione samochodu. Poza tym kto tak naprawdę lubi się męczyć?</p>
+                    </div>
+                </div>
+                <div class="field field-6 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="img/online-shop1.png" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>Oszczędność czasu</b>
+                        <p class="description">Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu i stania w długich kolejkach.
+                            Spędź ten czas z najbliższymi. Zamówienie zajmie Ci tylko chwilę, dzięki temu zaoszczędzisz dużo czasu.
+                            Zapłacisz kilkanaście złotych więcej za zakupy (koszt dostawy), ale w cenie wliczony będzie
+                            Twój komfort i czas.
+                            Zamówienie otrzymasz jeszcze tego samego dnia.</p>
+                    </div>
+                </div>
+                <div class="field field-7 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="img/smartphone.png" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>Łatwa obsługa aplikaji</b>
+                        <p class="description">Aplikacja działa na różnych urządzeniach, tj. telefon, tablet czy laptop.
+                            Wygodna oraz intuicyjna w obsłudze. W łatwy sposób odnajdziesz potrzebny Ci sklep i
+                            produkty.....
+
+                        </p>
+                    </div>
+                </div>
+                <div class="field field-8 row">
+                    <div class="benefits-box box-icon col-sm-2"><img src="" alt=""></div>
+                    <div class="benefits-box box-text col-sm-10">
+                        <b>Coś dopisać</b>
+                        <p class="description">Hasło ogólnopolskiego programu społecznego,
+                            które ma na celu promocję i wsparcie niezależnych, osiedlowych sklepików,
+                            o zasięgu lokalnym oraz rozwoju tradycyjnego handlu.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!--Paweł - Newsletter, podanie maila i imienia-->
+<section class="you-get">
+    <div class="container">
+        <div class="heading">
+            <h2>Powody dla których <b>warto korzystać</b> z aplikacji</h2>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/grocery%201.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">Łatwe zakupy</p></div>
+                            <div class="description">
+                                <p>Kupowanie online jest bardzo proste a zakupy zrobisz bardziej
+                                    przemyslane i racjonalne z dowolnego miejsca.
+                                    Aplikacja pozwala na zamówienie różnorodnych produktów z wielu sklepów
+                                    osiedlowych.</p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
+                    <div class="lalala col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/checklist.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">Regionalne produkty</p></div>
+                            <div class="description">
+                                <p>W ofertach małych sklepików znaleźć można żywność ekologiczną,
+                                    pochodzącą od lokalnych rolników i gospodarstw. Są wśród nich m.in.
+                                    wędliny, owoce, warzywa, wyroby piekarnicze, miody, sery i olej.
+                                    Dzięki temu możesz odnaleźć produkty wyjątkowe pod względem
+                                    jakości i smaku.</p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
+                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/fruit.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">Świeże produkty</p></div>
+                            <div class="description">
+                                <p>Nie bez znaczenia jest jakość towaru.
+                                    Każdy docenia świeżość pieczywa, owoców i warzyw oraz mięsa i nabiału oferowanego w
+                                    lokalnych sklepach. Kupując je, masz pewność, że dostarczone produkty nie zepsują się,
+                                    ponieważ zamawiasz z blisko położonych sklepów na osiedlu, a czas dostawy jest krótki.</p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
+                    <div class="lalala col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/map-location.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">"Tu mieszkam,<br> Tu kupuję"</p></div>
+                            <div class="description">
+                                <p>Ogólnopolski program społeczny, mający na celu promocję i wsparcie
+                                     osiedlowych sklepików o zasięgu lokalnym oraz rozwoju
+                                    tradycyjnego handlu. Stanowią one serce
+                                    każdej lokalnej społeczności, a zakupy w nich mają wiele zalet.
+                                     Wspierajmy rodzimy, polski handel i produkty.</p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
+                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/delivery2.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">Dostawa dodomu</p></div>
+                            <div class="description">
+                                <p>Masz już dosyć dźwigania ciężkich kartonów i butelek na 4 piętro?
+                                    Czemu nie miałby Ci przynieść ich pod drzwi kurier? Dostawę pod drzwi docenią przede
+                                    wszystkim osoby z różnymi problemami zdrowotnymi, osoby opiekujące się dziećmi,
+                                    bądź też pozbawione samochodu. Poza tym kto tak naprawdę lubi się męczyć?</p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
+                    <div class="lalala col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/online-shop1.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">Oszczędność czasu</p></div>
+                            <div class="description">
+                                <p>Nie tracisz pieniędzy i czasu na dojazd, zwiedzanie marketu i stania w długich kolejkach.
+                                    Zamówienie zajmie Ci tylko chwilę, dzięki temu zaoszczędzisz dużo czasu.
+                                    Zapłacisz kilkanaście złotych więcej za zakupy (koszt dostawy),
+                                    ale w cenie wliczony będzie Twój komfort i czas. </p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
+                    <div class="lalala lalala-before col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/fruit.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">Łatwa obsługa aplikacji</p></div>
+                            <div class="description">
+                                <p>Aplikacja działa na różnych urządzeniach, tj. telefon, tablet czy laptop.
+                                    Wygodna oraz intuicyjna w obsłudze. W łatwy sposób odnajdziesz potrzebny Ci sklep i
+                                    produkty.....</p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
+                    <div class="lalala col-sm-6 item-wrap">
+                        <div class="row item">
+                            <div class="col-2"><span class="you-get-icon"><img src="img/smartphone.png"></span>
+                            </div>
+                            <div class="col-6"><p class="sub-title">Coś dopisać</p></div>
+                            <div class="description">
+                                <p>Hasło ogólnopolskiego programu społecznego,
+                                    które ma na celu promocję i wsparcie niezależnych, osiedlowych sklepików,
+                                    o zasięgu lokalnym oraz rozwoju tradycyjnego handlu.</p>
+                            </div><!-- description -->
+                        </div><!-- item -->
+                    </div><!-- item-wrap -->
 
-<section class="newsletter">
-    <form class="form">
-        <h3>Zapisz się na premierę!</h3>
+
+                </div><!-- row -->
+            </div><!-- col-sm-10 -->
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
+<!--Paweł - Newsletter, podanie maila i imienia-->
+**
+<section class="newsletter" id="newsletter">
+    <form class="form heading">
+        <h2>Zapisz się na <b>premierę!</b></h2>
         <form action="http://c-bula.pl/newsletter.php">
             <div class="form-row">
                 <div class="form-group col-md-6 col-sm-12">
-                    <label for="inputName">Imię:</label>
+                    <label for="inputName"></label>
                     <input type="text" class="form-control" id="inputName" placeholder="Twoje imię" required="required"
                            pattern="[A-ZŁŚŻ]{1}[a-z,ą,ę,ć,ń,ó,ś,ł]{2,15}"
                            title="Wprowadź poprawnie imię zaczynając od wielkiej litery (3-15 liter)">
                 </div>
                 <div class="form-group col-md-6 col-sm-12">
-                    <label for="inputEmail4">E-mail:</label>
+                    <label for="inputEmail4"></label>
                     <input type="email" class="form-control" id="inputEmail4" placeholder="Twój e-mail"
                            required="required" pattern="[a-z0-9_.-]+@[a-z0-9_.-]+\.\w{2,4}"
                            title="Wprowadź poprawny adres e-mail">
@@ -155,144 +378,204 @@
                 <button type="reset" class="btn btn-primary">Wyczyść</button>
             </div>
         </form>
-</section>
-<section class="funct">
-    <div class="cards">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Więcej</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Więcej</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Więcej</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/newsletter-img.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Więcej</a>
-            </div>
-        </div>
-    </div>
+    </form>
 </section>
 
 <!--Lukasz - ABOUT US-->
-<section class="about-us" id="about-us">
 
-    <div class="about-us-countainer">
-        <div class="container">
-            <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img"  src="img/lukasz.jpg" alt=""></img>
-                <h1>Łukasz Juchniewicz</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="git-hub social">
-                         <a href="https://github.com/juchas019" target="_blank"><img src="img/github-logo.png" alt=""></a>
-                    </div>
-                    <div class="facebook social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
-                    </div>
-                    <div class="linkedin social">
-                        <a href="https://pl.linkedin.com/"target="_blank"><img src="img/linkedin.png" alt=""></a>
-                    </div>
-                    <div class="portfolio social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
+<div class="container content">
+    <div class="heading">
+        <h2>Super zespół <strong>C-Bula</strong></h2>
+        <!--<p>To try the most advanced business</p>-->
+    </div><!-- //end heading -->
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive center-block" src="img/lukasz123.png" alt="">
+                </div>
+                <div class="team-desc">
+                    <h4>Łukasz Juchniewicz</h4>
+                    <span>Super fajny chłopak, który postanowił spróbować swoich sił jako Front-end Dev</span>
+                    <div class="social-icons">
+                        <div class="git-hub social">
+                            <a href="https://github.com/juchas019" target="_blank"><img class="team-img" src="img/github-logo.png"
+                                                                                        alt=""></a>
+                        </div>
+                        <div class="linkedin social">
+                            <a href="https://pl.linkedin.com/" target="_blank"><img class="team-img" src="img/linkedin.png"
+                                                                                    alt=""></a>
+                        </div>
+                        <div class="portfolio social">
+                            <a href="" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img"  src="" alt=""></img>
-                <h1>Tatiana Klenk</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="social">
-                        <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
-                    </div>
-                    <div class="facebook social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://pl.linkedin.com/"target="_blank"><img src="img/linkedin.png" alt=""></a>
-                    </div>
-                    <div class="social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
-                    </div>
+        <div class="col-sm-3">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member2.png" alt="">
+                </div>
+                <div class="team-desc">
+                    <h4>Melisa Doe</h4>
+                    <span>Founder</span>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img" src="" alt=""></img>
-                <h1>Marta Pieńkowska</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="social">
-                        <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
-                    </div>
-                    <div class="linkedin social">
-                        <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-                    </div>
-                    <div class="portfolio social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
-                    </div>
+        <div class="col-sm-3">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member3.png" alt="">
+                </div>
+                <div class="team-desc">
+                    <h4>Alex Atkinson</h4>
+                    <span>Director</span>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="about-us-container-person">
-                <img class="img-fluid person-img"  src="" alt=""></img>
-                <h1>Paweł Nowicki</h1>
-                <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras sapien nisl, facilisis at vulputate id, facilisis eget est.</p>
-                <div class="social-icons">
-                    <div class="git-hub social">
-                        <a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>
-                    </div>
-                    <div class="facebook social">
-                        <a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img src="img/facebook.png" alt=""></a>
-                    </div>
-                    <div class="linkedin social">
-                        <a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-                    </div>
-                    <div class="portfolio social">
-                        <a href="" target="_blank"><img src="img/resume.png" alt=""></a>
-                    </div>
+        <div class="col-sm-3">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member3.png" alt="">
+                </div>
+                <div class="team-desc">
+                    <h4>Alex Atkinson</h4>
+                    <span>Director</span>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-</section>
+    </div><!-- //end row -->
+</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<section class="about-us" id="about-us">-->
+
+    <!--<div class="about-us-countainer">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
+                    <!--<div class="about-us-container-person">-->
+                        <!--<img class="img-fluid person-img" src="img/lukasz.jpg" alt=""></img>-->
+                        <!--<h1>Łukasz Juchniewicz</h1>-->
+                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
+                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
+                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
+                        <!--<div class="social-icons">-->
+                            <!--<div class="git-hub social">-->
+                                <!--<a href="https://github.com/juchas019" target="_blank"><img src="img/github-logo.png"-->
+                                                                                            <!--alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="facebook social">-->
+                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
+                                        <!--src="img/facebook.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="linkedin social">-->
+                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
+                                                                                        <!--alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="portfolio social">-->
+                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
+                    <!--<div class="about-us-container-person">-->
+                        <!--<img class="img-fluid person-img" src="" alt=""></img>-->
+                        <!--<h1>Tatiana Klenk</h1>-->
+                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
+                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
+                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
+                        <!--<div class="social-icons">-->
+                            <!--<div class="social">-->
+                                <!--<a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="facebook social">-->
+                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
+                                        <!--src="img/facebook.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="social">-->
+                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
+                                                                                        <!--alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="social">-->
+                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
+                    <!--<div class="about-us-container-person">-->
+                        <!--<img class="img-fluid person-img" src="" alt=""></img>-->
+                        <!--<h1>Marta Pieńkowska</h1>-->
+                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
+                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
+                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
+                        <!--<div class="social-icons">-->
+                            <!--<div class="social">-->
+                                <!--<a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="social">-->
+                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
+                                        <!--src="img/facebook.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="linkedin social">-->
+                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
+                                                                                        <!--alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="portfolio social">-->
+                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
+                    <!--<div class="about-us-container-person">-->
+                        <!--<img class="img-fluid person-img" src="" alt=""></img>-->
+                        <!--<h1>Paweł Nowicki</h1>-->
+                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
+                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
+                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
+                        <!--<div class="social-icons">-->
+                            <!--<div class="git-hub social">-->
+                                <!--<a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="facebook social">-->
+                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
+                                        <!--src="img/facebook.png" alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="linkedin social">-->
+                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
+                                                                                        <!--alt=""></a>-->
+                            <!--</div>-->
+                            <!--<div class="portfolio social">-->
+                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -305,9 +588,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 <script>
-    $('.carousel').carousel({
-
-    })
+    $('.carousel').carousel({})
 </script>
 
 
