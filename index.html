@@ -11,31 +11,30 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
-    <!-- Brand/logo -->
-    <div class="navbar-logo">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="logo" style="height: 50px">
-    </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#intro-slider"><img src="img/logo.png" alt="logo" style="height: 50px"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#boxes">Cechy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#details">Szczegóły</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newsletter">Premiera</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">O nas</a>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <!-- Links -->
-<div class="navbar-item-list">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#boxes">Zalety</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#details">Szczegóły</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#newsletter">Premiera</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#about-us">O nas</a>
-        </li>
-    </ul>
-</div>
 </nav>
 
 <section class="intro">
@@ -277,26 +276,44 @@
 <div class="container content" id="about-us">
     <div class="heading">
         <h2>Zespół <strong>C-Bula</strong></h2>
-        <!--<p>To try the most advanced business</p>-->
-    </div><!-- //end heading -->
-
+    </div>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="team-members">
                 <div class="team-avatar">
                     <img class="img-responsive center-block" src="img/lukasz123.png" alt="">
                 </div>
                 <div class="team-desc">
                     <h4>Łukasz Juchniewicz</h4>
-                    <span>Super fajny chłopak, który postanowił spróbować swoich sił jako Front-end Dev</span>
+                    <span>Z wykształcenia Informatyk. Kibic sportowy. Wolny czas spędza na siłowni. Lubi czytać, słucha muzyki filmowej, interesuje go astronomia. Od niedawna próbuje sił we Front-Endzie.</span>
                     <div class="social-icons">
                         <div class="git-hub social">
-                            <a href="https://github.com/juchas019" target="_blank"><img class="team-img" src="img/github-logo.png"
-                                                                                        alt=""></a>
+                            <a href="https://github.com/juchas019" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
                         </div>
                         <div class="linkedin social">
-                            <a href="https://pl.linkedin.com/" target="_blank"><img class="team-img" src="img/linkedin.png"
-                                                                                    alt=""></a>
+                            <a href="https://www.linkedin.com/in/%C5%82ukasz-juchniewicz-091538164/" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
+                        </div>
+                        <div class="portfolio social">
+                            <a href="https://github.com/juchas019/portfolio" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="img/tatiana.jpg" alt="">
+                </div>
+                <div class="team-desc">
+                    <h4>Tatiana Klenk</h4>
+                    <span>Absolwentka E-biznesu na UG. Obecnie HR-ka. Lubi aktywnie spędzać czas, szczególnie na świeżym powietrzu. Ciągle szuka nowych zajęć i wrażeń.</span>
+                    <div class="social-icons">
+                        <div class="git-hub social">
+                            <a href="" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
+                        </div>
+                        <div class="linkedin social">
+                            <a href="" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
                         </div>
                         <div class="portfolio social">
                             <a href="" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
@@ -305,36 +322,47 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="team-members">
                 <div class="team-avatar">
-                    <img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member2.png" alt="">
+                    <img class="img-responsive" src="img/marta.jpg" alt="">
                 </div>
                 <div class="team-desc">
-                    <h4>Melisa Doe</h4>
-                    <span>Founder</span>
+                    <h4>Marta Pieńkowska</h4>
+                    <span>Poczatkująca Front-End developerka. Wielbicielka mango i czekolady. W wolnych chwilach lubi spędzać czas z przyjaciółmi, siedziec na słońcu i cieszyć się chwilą.</span>
+                    <div class="social-icons">
+                        <div class="git-hub social">
+                            <a href="https://github.com/PienkowskaMarta" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
+                        </div>
+                        <div class="linkedin social">
+                            <a href="https://pl.linkedin.com/in/marta-pie%C5%84kowska-7b173454" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
+                        </div>
+                        <div class="portfolio social">
+                            <a href="" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="team-members">
                 <div class="team-avatar">
                     <img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member3.png" alt="">
                 </div>
                 <div class="team-desc">
-                    <h4>Alex Atkinson</h4>
+                    <h4>Paweł Nowicki</h4>
                     <span>Director</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="team-members">
-                <div class="team-avatar">
-                    <img class="img-responsive" src="http://keenthemes.com/assets/bootsnipp/member3.png" alt="">
-                </div>
-                <div class="team-desc">
-                    <h4>Alex Atkinson</h4>
-                    <span>Director</span>
+                    <div class="social-icons">
+                        <div class="git-hub social">
+                            <a href="" target="_blank"><img class="team-img" src="img/github-logo.png" alt=""></a>
+                        </div>
+                        <div class="linkedin social">
+                            <a href="" target="_blank"><img class="team-img" src="img/linkedin.png" alt=""></a>
+                        </div>
+                        <div class="portfolio social">
+                            <a href="" target="_blank"><img class="team-img" src="img/resume.png" alt=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -342,131 +370,98 @@
 </div>
 
 
+<!-- Footer Links -->
+<div class="container text-center text-md-left mt-5">
 
+    <!-- Grid row -->
+    <div class="row mt-3">
 
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
+            <!-- Content -->
+            <h6 class="footer-content">C-BULA</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p> Już dziś zrób zakupy w C-buli,<br> a zaoszczędzisz czas i pieniądze.</p>
 
+        </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
+            <!-- Links -->
+            <h6 class="footer-shops">Sklepy</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Spożywczy</a>
+            </p>
+            <p>
+                <a href="#!">Pralnia</a>
+            </p>
+            <p>
+                <a href="#!">Szewc</a>
+            </p>
+            <p>
+                <a href="#!">Pasmanteria</a>
+            </p>
 
+        </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
+            <!-- Links -->
+            <h6 class="footer-useful-links">Przydatne</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Twoje konto</a>
+            </p>
+            <p>
+                <a href="#!">Wskazówki dojazdu</a>
+            </p>
+            <p>
+                <a href="#!">Dostawa</a>
+            </p>
+            <p>
+                <a href="#!">FAQ</a>
+            </p>
 
+        </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
+            <!-- Links -->
+            <h6 class="footer-contact">Kontakt</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <i class="fa fa-home mr-1.9"></i>al. Grunwaldzka 472B</p>
+            <p>
+                <i class="fa fa-envelope mr-1.9"></i>Gdańsk</p>
+            <p>
+                <i class="fa fa-phone mr-1.9"></i>info@cbula.pl</p>
+            <p>
+                <i class="fa fa-print mr-1.9"></i>tel.604 555 666</p>
 
+        </div>
+        <!-- Grid column -->
 
+    </div>
+    <!-- Grid row -->
 
-<!--<section class="about-us" id="about-us">-->
+</div>
+<!-- Footer Links -->
 
-    <!--<div class="about-us-countainer">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
-                    <!--<div class="about-us-container-person">-->
-                        <!--<img class="img-fluid person-img" src="img/lukasz.jpg" alt=""></img>-->
-                        <!--<h1>Łukasz Juchniewicz</h1>-->
-                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
-                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
-                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
-                        <!--<div class="social-icons">-->
-                            <!--<div class="git-hub social">-->
-                                <!--<a href="https://github.com/juchas019" target="_blank"><img src="img/github-logo.png"-->
-                                                                                            <!--alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="facebook social">-->
-                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
-                                        <!--src="img/facebook.png" alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="linkedin social">-->
-                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
-                                                                                        <!--alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="portfolio social">-->
-                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
-                    <!--<div class="about-us-container-person">-->
-                        <!--<img class="img-fluid person-img" src="" alt=""></img>-->
-                        <!--<h1>Tatiana Klenk</h1>-->
-                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
-                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
-                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
-                        <!--<div class="social-icons">-->
-                            <!--<div class="social">-->
-                                <!--<a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="facebook social">-->
-                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
-                                        <!--src="img/facebook.png" alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="social">-->
-                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
-                                                                                        <!--alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="social">-->
-                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
-                    <!--<div class="about-us-container-person">-->
-                        <!--<img class="img-fluid person-img" src="" alt=""></img>-->
-                        <!--<h1>Marta Pieńkowska</h1>-->
-                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
-                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
-                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
-                        <!--<div class="social-icons">-->
-                            <!--<div class="social">-->
-                                <!--<a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="social">-->
-                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
-                                        <!--src="img/facebook.png" alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="linkedin social">-->
-                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
-                                                                                        <!--alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="portfolio social">-->
-                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-12 col-md-6 col-lg-3">-->
-                    <!--<div class="about-us-container-person">-->
-                        <!--<img class="img-fluid person-img" src="" alt=""></img>-->
-                        <!--<h1>Paweł Nowicki</h1>-->
-                        <!--<p class="person-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum-->
-                            <!--magna ac facilisis gravida. Curabitur sed nunc at ipsum egestas tincidunt ut sed sem. Cras-->
-                            <!--sapien nisl, facilisis at vulputate id, facilisis eget est.</p>-->
-                        <!--<div class="social-icons">-->
-                            <!--<div class="git-hub social">-->
-                                <!--<a href="" target="_blank"><img src="img/github-logo.png" alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="facebook social">-->
-                                <!--<a href="https://www.facebook.com/infosharepl/?ref=br_rs" target="_blank"><img-->
-                                        <!--src="img/facebook.png" alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="linkedin social">-->
-                                <!--<a href="https://pl.linkedin.com/" target="_blank"><img src="img/linkedin.png"-->
-                                                                                        <!--alt=""></a>-->
-                            <!--</div>-->
-                            <!--<div class="portfolio social">-->
-                                <!--<a href="" target="_blank"><img src="img/resume.png" alt=""></a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
+<!-- Copyright -->
+<div class="footer-copyright">© 2018 Copyright:
+    <a href=""> C-BULA Developers Team</a>
+</div>
+<!-- Copyright -->
+
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

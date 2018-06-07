@@ -13,7 +13,7 @@ body {
     text-align: center;
     margin-bottom: 50px;
     /*margin-top: 50px;*/
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 /*.heading:after {*/
@@ -34,6 +34,9 @@ body {
     color: #444;
 }
 /* NAVIGATION MENU */
+a.nav-link {
+    text-align: center;
+}
 .navbar {
     display: flex;
 }
@@ -484,14 +487,21 @@ button.btn.btn-primary {
 /* Team Members */
 .team-members {
     width: 100%;
+    max-height: 450px;
+    max-width: 350px;
     cursor: pointer;
     overflow: hidden;
     position: relative;
     margin-bottom: 35px;
+    border-radius: 15px;
 }
 
 .team-members .team-avatar {
     position: relative;
+}
+.team-members:hover img {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
 }
 
 .team-members .team-avatar:after {
@@ -535,11 +545,12 @@ button.btn.btn-primary {
     font-weight: 600;
     margin: 0 0 10px;
     color: #fff;
+    text-align: center;
 }
 
 .team-members .team-desc span {
     display: block;
-    /*font-size: 13px;*/
+    font-size: 14px;
     font-weight: 600;
     /*text-transform: uppercase;*/
     color: #fff;
@@ -574,13 +585,16 @@ button.btn.btn-primary {
     right: 0;
     justify-content: space-evenly;
     margin-top: 10px;
+    border-top: whitesmoke 1px solid;
+    padding-top: 5px;
 }
+
 .social:hover {
     background: white;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .team-img {
@@ -588,73 +602,44 @@ button.btn.btn-primary {
 }
 
 
+/*FOOTER*/
 
-/*.about-us-countainer {*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: space-evenly;*/
-/*}*/
-/*.about-us-container-person {*/
-    /*width: 100%;*/
-    /*height: 560px;*/
-    /*margin-bottom: 100px;*/
-    /*margin-top: 50px;*/
-    /*background: #7AAA42;*/
-    /*border-top-left-radius: 20px;*/
-    /*border-top-right-radius: 20px;*/
-    /*position: relative;*/
-    /*overflow: hidden;*/
-/*}*/
-/*.person-img {*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*display: block;*/
-    /*margin-bottom: 20px;*/
-    /*transition: all 0.4s ease-in-out ;*/
-/*}*/
-/*.about-us-container-person:hover .person-img {*/
-    /*transform: scale(1.1);*/
-/*}*/
-/*.about-us-container-person h1 {*/
-    /*text-align: center;*/
-    /*font-size: 28px;*/
-    /*margin-left: 20px;*/
-    /*margin-right: 20px;*/
-/*}*/
-/*.about-us-container-person p {*/
-    /*font-size: 14px;*/
-    /*margin: 20px 10px 10px 10px;*/
-    /*text-align: center;*/
-/*}*/
-/*.social-icons {*/
-    /*display: flex;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*justify-content: space-evenly;*/
-    /*opacity: 0;*/
-    /*transition: all 0.4s ease-in-out ;*/
-    /*padding-bottom: 5px;*/
-/*}*/
-/*.about-us-container-person:hover .social-icons {*/
-    /*opacity: 1;*/
-/*}*/
-/*.about-us-container-person:hover {*/
-    /*-moz-box-shadow:    inset 0 0 15px #8C8982;*/
-    /*-webkit-box-shadow: inset 0 0 15px #8C8982;*/
-    /*box-shadow:         inset 0 0 15px #8C8982;*/
-/*}*/
-/*.social {*/
-    /*width: 40px;*/
-    /*height: 40px;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-/*}*/
-/*.social:hover {*/
-    /*background:#C3D330;*/
-/*}*/
+/*.page-footer{
+    font-size: 1rem;
+    color: black;
+    margin-top: 4;
+}*/
+
+.footer-style{
+    background-color: #B3BBBC;
+}
+.footer-facebook{
+    margin-right: 4px;
+}
+.footer-twitter{
+    margin-right: 2px;
+}
+.footer-content{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-shops{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-useful-links{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-contact{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-copyright {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 
 
@@ -662,8 +647,4 @@ button.btn.btn-primary {
 
 
 
-/*@media (min-width: 576px) {*/
-    /*.intro-header {*/
-        /*max-width: 95%;*/
-    /*}*/
-/*}*/
+
